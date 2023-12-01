@@ -10,11 +10,11 @@ from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_
 from database.users_chats_db import db
 from database.ia_filterdb import Media, get_file_details, get_search_results
 from plugins.group_filter import global_filters
-from database.filters_mdb import (
-    del_all,
-    find_filter,
-    get_filters,
-)
+# from database.filters_mdb import (
+  #  del_all,
+   # find_filter,
+    #get_filters,
+# )
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
