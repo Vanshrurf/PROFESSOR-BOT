@@ -76,7 +76,7 @@ async def start(client, message):
         await message.reply_photo(photo=random.choice(PICS), caption=START_MESSAGE.format(user=message.from_user.mention, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), parse_mode=enums.ParseMode.HTML)
         return await m.delete()
         
-     data = message.command[1]
+    data = message.command[1]
     try:
         pre, file_id = data.split('_', 1)
     except:
