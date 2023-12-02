@@ -19,14 +19,14 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
 
 <b>ᴅᴇᴠ: <a herf=https://t.me/vip_bro10>Vansh-Yadav</a></b>"""
 
-    FILE_TXT = """<b>Hᴇʟᴘ Fᴏʀ Fɪʟᴇ Sᴛᴏʀᴇ</b>"""
+#    FILE_TXT = """<b>Hᴇʟᴘ Fᴏʀ Fɪʟᴇ Sᴛᴏʀᴇ</b>"""
 
-<b>-> Cᴏᴍᴍᴀɴᴅ & Usᴀɢᴇ</b>
-- link > Rᴇᴘʟʏ Tᴏ Aɴʏ Mᴇᴅɪᴀ Tᴏ Gᴇᴛ Tʜᴇ Lɪɴᴋ 
-- batch > Tᴏ Cʀᴇᴀᴛᴇ Lɪɴᴋ Fᴏʀ Mᴜʟᴛɪᴘʟᴇ Mᴇᴅɪᴀ
+# <b>-> Cᴏᴍᴍᴀɴᴅ & Usᴀɢᴇ</b>
+# - link > Rᴇᴘʟʏ Tᴏ Aɴʏ Mᴇᴅɪᴀ Tᴏ Gᴇᴛ Tʜᴇ Lɪɴᴋ 
+# - batch > Tᴏ Cʀᴇᴀᴛᴇ Lɪɴᴋ Fᴏʀ Mᴜʟᴛɪᴘʟᴇ Mᴇᴅɪᴀ
 
-<b>-> EG:</b>
-</code>https://t.me/mkn_bots_updates/1 https://t.me/mkn_bots_updates/10</code>"""
+# <b>-> EG:</b>
+# </code>https://t.me/mkn_bots_updates/1 https://t.me/mkn_bots_updates/10</code>"""
   
     FILTER_TXT = "Sᴇʟᴇᴄᴛ Wʜɪᴄʜ Oɴᴇ Yᴏᴜ Wᴀɴᴛ..."
     
