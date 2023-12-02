@@ -54,7 +54,7 @@ FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', "FORCE_SUB_TEX")
 
 BUTTON_LOCK_TEX = ("Hᴇʏ query \nTʜɪꜱ Iꜱ Nᴏᴛ Fᴏʀ Yᴏᴜ. Sᴇᴀʀᴄʜ Yᴏᴜʀ Sᴇʟꜰ")
 FORCE_SUB_TEX = ("Sᴏʀʀʏ Bʀᴏ Yᴏᴜʀ Nᴏᴛ Jᴏɪɴᴇᴅ Mʏ Cʜᴀɴɴᴇʟ Sᴏ Pʟᴇᴀsᴇ Cʟɪᴄᴋ Jᴏɪɴ Bᴜᴛᴛᴏɴ Tᴏ Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ Aɴᴅ Tʀʏ Aɢᴀɪɴ")
-TEXT_WELCOME = ("WELCOM_TEXT = """Hᴇʏ User")
+TEXT_WELCOME = ("WELCOM_TEXT = "Hᴇʏ User")
 
 WELCOM_PIC = environ.get("WELCOM_PIC", "")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", TEXT_WELCOME)
