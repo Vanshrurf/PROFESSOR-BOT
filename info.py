@@ -54,9 +54,10 @@ FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', "FORCE_SUB_TEX")
 
 BUTTON_LOCK_TEX = ("Hᴇʏ query \nTʜɪꜱ Iꜱ Nᴏᴛ Fᴏʀ Yᴏᴜ. Sᴇᴀʀᴄʜ Yᴏᴜʀ Sᴇʟꜰ")
 FORCE_SUB_TEX = ("Sᴏʀʀʏ Bʀᴏ Yᴏᴜʀ Nᴏᴛ Jᴏɪɴᴇᴅ Mʏ Cʜᴀɴɴᴇʟ Sᴏ Pʟᴇᴀsᴇ Cʟɪᴄᴋ Jᴏɪɴ Bᴜᴛᴛᴏɴ Tᴏ Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ Aɴᴅ Tʀʏ Aɢᴀɪɴ")
+TEXT_WELCOME = ("WELCOM_TEXT = """Hᴇʏ User 💞")
 
 WELCOM_PIC = environ.get("WELCOM_PIC", "")
-WELCOM_TEXT = environ.get("WELCOM_TEXT", script.WELCOM_TEXT)
+WELCOM_TEXT = environ.get("WELCOM_TEXT", TEXT_WELCOME)
 PMFILTER = is_enabled(environ.get('PMFILTER', "True"), True)
 G_FILTER = is_enabled(environ.get("G_FILTER", "True"), True)
 BUTTON_LOCK = is_enabled(environ.get("BUTTON_LOCK", "True"), True)
