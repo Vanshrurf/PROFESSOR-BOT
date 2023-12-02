@@ -506,7 +506,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('« Bᴀᴄᴋ', 'morex'),           
         ]]
         async def handle_admin_query(query):
-        if query.from_user.id not in ADMINS:
             return await query.answer("Hello Mere Jaan Kuch Error aa gya Try again", show_alert=True)
         await query.message.edit("Pʀᴏᴄᴇꜱꜱɪɴɢ Wᴀɪᴛ Fᴏʀ 15 ꜱᴇᴄ...")
         total, used, free = shutil.disk_usage(".")
