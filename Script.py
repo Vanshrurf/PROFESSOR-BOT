@@ -24,7 +24,8 @@ MOREXA_TXT = """<b>-- Mᴏᴠɪᴇ Gʀᴏᴜᴘ
 -- Rᴇɴᴅᴇʀ Sᴛᴀᴛᴜꜱ
 -- Dɪꜱᴄʟᴀɪᴍᴇʀ</b>"""
 
-    MOVIEXA_TXT = """<b>Bᴇꜱᴛ Mᴏᴠɪᴇ Gʀᴏᴜᴘ</b>"""
+    MOVIEXA_TXT = """<b>Hᴇʏ {}
+Movie Group Here.</b>"""
 
     BACKUPXA_TXT = """<b>Bᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ</b>
 
