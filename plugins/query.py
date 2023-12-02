@@ -461,25 +461,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('❗️ Dɪꜱᴄʟᴀɪᴍᴇʀ ❗️', 'morex1'),
         ]]
-        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.HELP_TXT.format(query.from_user.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))     
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.MOREXA_TXT.format(query.from_user.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))     
 
     elif query.data == "moviex":
         buttons= [[
+            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url=f'http://t.me/moviekorner_1'))
+        ],[
             InlineKeyboardButton('« Bᴀᴄᴋ', 'morex')
             ]]
-        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.ABOUT_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.MOVIEXA_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "backupx":
         buttons= [[
             InlineKeyboardButton('« Bᴀᴄᴋ', 'morex')
             ]]
-        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.ABOUT_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.BACKUPXA_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "morex1":
         buttons= [[
             InlineKeyboardButton('« Bᴀᴄᴋ', 'morex')
             ]]
-        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.ABOUT_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.MOREXA_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
         
     elif query.data == "about":
         buttons= [[
