@@ -23,12 +23,12 @@ I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇ Fᴏʀ Yᴏᴜ Jᴜsᴛ Aᴅᴅ Mᴇ Iɴ
 
 <i>Bʏ Usɪɴɢ Tʜɪs Mᴏᴅᴜʟᴇ Yᴏᴜ Cᴀɴ Sᴛᴏʀᴇ Fɪʟᴇs Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Aɴᴅ I Wɪʟʟ Gɪᴠᴇ Yᴏᴜ A Pᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ  Tᴏ Aᴄᴄᴇss Tʜᴇ Sᴀᴠᴇᴅ Fɪʟᴇs. Iғ Yᴏᴜ Wᴀɴᴛ Tᴏ Aᴅᴅ Fɪʟᴇs Fʀᴏᴍ A Pᴜʙʟɪᴄ Cʜᴀɴɴᴇʟ Sᴇɴᴅ Tʜᴇ Fɪʟᴇ Lɪɴᴋ Oɴʟʏ  Oʀ Yᴏᴜ Wᴀɴᴛ Tᴏ Aᴅᴅ Fɪʟᴇs Fʀᴏᴍ A  Pʀɪᴠᴀᴛᴇ Cʜᴀɴɴᴇʟ Yᴏᴜʀ Mᴜsᴛ Mᴀᴋᴇ Mᴇ Aᴅᴍɪɴ Oɴ Tʜᴇ Cʜᴀɴɴᴇʟ Tᴏ Aᴄᴄᴇss Fɪʟᴇs</i>
 
-<b>⪼ Cᴏᴍᴍᴀɴᴅ & Usᴀɢᴇ</b>
+<b>-> Cᴏᴍᴍᴀɴᴅ & Usᴀɢᴇ</b>
 - link › Rᴇᴘʟʏ Tᴏ Aɴʏ Mᴇᴅɪᴀ Tᴏ Gᴇᴛ Tʜᴇ Lɪɴᴋ 
 - batch › Tᴏ Cʀᴇᴀᴛᴇ Lɪɴᴋ Fᴏʀ Mᴜʟᴛɪᴘʟᴇ Mᴇᴅɪᴀ
 
-<b>⪼ EG:</b>
-</code>/batch https://t.me/mkn_bots_updates/1 https://t.me/mkn_bots_updates/10</code>"""
+<b>-> EG:</b>
+</code>https://t.me/mkn_bots_updates/1 https://t.me/mkn_bots_updates/10</code>"""
   
     FILTER_TXT = "Sᴇʟᴇᴄᴛ Wʜɪᴄʜ Oɴᴇ Yᴏᴜ Wᴀɴᴛ..."
     
@@ -118,13 +118,13 @@ MOREXA_TXT = """<b>ᴛʜɪꜱ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏ
       
     INPUT_REQUIRED = " **Aʀɢᴜᴍᴇɴ Rqᴜɪʀᴇᴅ**"
       
-    KICKED = "✔Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ Kɪᴄᴋᴇᴅ {} Mᴇᴍʙᴇʀꜱ Acᴄᴏʀᴅɪɴɢ To Tʜᴇ Aʀɢᴜᴍᴇɴᴛꜱ Prᴏᴠɪᴅᴇᴅ"
+    KICKED = "Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ Kɪᴄᴋᴇᴅ {} Mᴇᴍʙᴇʀꜱ Acᴄᴏʀᴅɪɴɢ To Tʜᴇ Aʀɢᴜᴍᴇɴᴛꜱ Prᴏᴠɪᴅᴇᴅ"
       
     START_KICK = "Rᴇᴍᴏᴠɪɴɢ Iɴᴀᴄᴛɪᴠᴇ Mᴇᴍʙᴇʀs Tʜɪs Mᴀʏ Tᴀᴋᴇ A Wʜɪʟᴇ"
       
     ADMIN_REQUIRED = "<b>Iᴀᴍ Nᴏᴛ Aᴅᴍɪɴ Iɴ Tʜɪꜱ Cʜᴀᴛ Sᴏ Pʟᴇᴀꜱᴇ Aᴅᴅ Mᴇ Aɢᴀɪɴ Wɪᴛʜ Aʟʟ Pᴅᴍɪɴ Pᴇʀᴍɪꜱꜱɪᴏɴ</b>"
       
-    DKICK = "✔ Kɪᴄᴋᴇᴅ {} Dᴇʟᴇᴛᴇᴅ Aᴄᴄᴏᴜɴᴛꜱ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ"
+    DKICK = "Kɪᴄᴋᴇᴅ {} Dᴇʟᴇᴛᴇᴅ Aᴄᴄᴏᴜɴᴛꜱ Sᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ"
       
     FETCHING_INFO = "<b>Wᴀɪᴛ I Wɪʟʟ Tᴀᴋᴇ Tʜᴇ Aʟʟ Iɴꜰᴏ</b>"
    
