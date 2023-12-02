@@ -469,7 +469,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ],[
             InlineKeyboardButton('« Bᴀᴄᴋ', 'morex')
             ]]
-        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.MOVIEXA_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.FILTER_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
 
     elif query.data == "backupx":
         buttons= [[
@@ -481,7 +481,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons= [[
             InlineKeyboardButton('« Bᴀᴄᴋ', 'morex')
             ]]
-        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.MOREXA_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.GLOBALFILTER_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
         
     elif query.data == "about":
         buttons= [[
@@ -527,7 +527,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "autofilter":
         buttons = [[
             InlineKeyboardButton('✘ Cʟᴏꜱᴇ', 'close_data'),
-            InlineKeyboardButton('« Bᴀᴄᴋ', 'openfilter')           
+            InlineKeyboardButton('« Bᴀᴄᴋ', 'help')           
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.AUTOFILTER_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
         
@@ -536,7 +536,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Bᴜᴛᴛᴏɴ Fᴏʀᴍᴀᴛ', 'button')
             ],[
             InlineKeyboardButton('✘ Cʟᴏꜱᴇ', 'close_data'),
-            InlineKeyboardButton('« Bᴀᴄᴋ', 'openfilter')           
+            InlineKeyboardButton('« Bᴀᴄᴋ', 'help')           
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.MANUELFILTER_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
         
@@ -545,7 +545,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Bᴜᴛᴛᴏɴ Fᴏʀᴍᴀᴛ', 'buttong')
             ],[
             InlineKeyboardButton('✘ Cʟᴏꜱᴇ', 'close_data'),
-            InlineKeyboardButton('« Bᴀᴄᴋ', 'openfilter')           
+            InlineKeyboardButton('« Bᴀᴄᴋ', 'help')           
         ]]
         if query.from_user.id not in ADMINS:
             return await query.answer("Sᴏʀʀʏ Tʜɪs Mᴇɴᴜ Oɴʟʏ Fᴏʀ Mʏ Aᴅᴍɪɴs ⚒️", show_alert=True)
