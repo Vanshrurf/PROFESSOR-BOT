@@ -433,6 +433,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[      
             InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
+        ],[
+            InlineKeyboardButton("Mᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ", callback_data="morex")
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), START_MESSAGE.format(user=query.from_user.mention, bot=client.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
        
@@ -448,6 +450,36 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔮 Status', 'stats')           
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.HELP_TXT.format(query.from_user.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))     
+
+    
+    elif query.data == "morex":
+        buttons = [[                       
+            InlineKeyboardButton('❤️‍🩹 Mᴏᴠɪᴇ Gʀᴏᴜᴘ ❤️‍🩹', 'moviex')
+            ],[           
+            InlineKeyboardButton('🩸 Bᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ 🩸', 'backupx'), 
+            InlineKeyboardButton('📡 Rᴇɴᴅᴇʀ Sᴛᴀᴛᴜꜱ 📡', 'renderx')
+            ],[
+            InlineKeyboardButton('❗️ Dɪꜱᴄʟᴀɪᴍᴇʀ ❗️', 'morex1'),
+        ]]
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.HELP_TXT.format(query.from_user.mention), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))     
+
+    elif query.data == "moviex":
+        buttons= [[
+            InlineKeyboardButton('« Bᴀᴄᴋ', 'morex')
+            ]]
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.ABOUT_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+
+    elif query.data == "backupx":
+        buttons= [[
+            InlineKeyboardButton('« Bᴀᴄᴋ', 'morex')
+            ]]
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.ABOUT_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
+
+    elif query.data == "morex1":
+        buttons= [[
+            InlineKeyboardButton('« Bᴀᴄᴋ', 'morex')
+            ]]
+        await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.ABOUT_TXT.format(temp.B_NAME), enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
         
     elif query.data == "about":
         buttons= [[
@@ -462,17 +494,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', url='https://t.me/vip_bro10')
             ],[
-            InlineKeyboardButton('✘ Cʟᴏꜱᴇ', 'close_data')
+            InlineKeyboardButton('« Bᴀᴄᴋ', 'start')
         ]]
         await query.edit_message_media(InputMediaPhoto(random.choice(PICS), script.SOURCE_TXT, enums.ParseMode.HTML), reply_markup=InlineKeyboardMarkup(buttons))
       
-    elif query.data == "admin":
+    elif query.data == "renderx":
         buttons = [[
-            InlineKeyboardButton('✘ Cʟᴏꜱᴇ', 'close_data'),
-            InlineKeyboardButton('« Bᴀᴄᴋ', 'help')           
+            InlineKeyboardButton('« Bᴀᴄᴋ', 'morex'),           
         ]]
+        async def handle_admin_query(query):
         if query.from_user.id not in ADMINS:
-            return await query.answer("Sᴏʀʀʏ Tʜɪs Mᴇɴᴜ Oɴʟʏ Fᴏʀ Mʏ Aᴅᴍɪɴs ⚒️", show_alert=True)
+            return await query.answer("Hello Mere Jaan Kuch Error aa gya Try again", show_alert=True)
         await query.message.edit("Pʀᴏᴄᴇꜱꜱɪɴɢ Wᴀɪᴛ Fᴏʀ 15 ꜱᴇᴄ...")
         total, used, free = shutil.disk_usage(".")
         stats = script.SERVER_STATS.format(get_time(time.time() - client.uptime), psutil.cpu_percent(), psutil.virtual_memory().percent, humanbytes(total), humanbytes(used), psutil.disk_usage('/').percent, humanbytes(free))            
