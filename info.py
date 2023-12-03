@@ -1,4 +1,4 @@
-import re, time
+ import re, time
 from os import environ
 from Script import script 
 
@@ -51,10 +51,6 @@ MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
 START_MESSAGE = environ.get('START_MESSAGE', "Hey Fuck me")
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "BUTTON_LOCK_TEX")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', "FORCE_SUB_TEX")
-MY_MOOD_OFF = ("Hello Use Me My Mood Off")
-BUTTON_LOCK_TEX = ("Hᴇʏ query \nTʜɪꜱ Iꜱ Nᴏᴛ Fᴏʀ Yᴏᴜ. Sᴇᴀʀᴄʜ Yᴏᴜʀ Sᴇʟꜰ")
-FORCE_SUB_TEX = ("Sᴏʀʀʏ Bʀᴏ Yᴏᴜʀ Nᴏᴛ Jᴏɪɴᴇᴅ Mʏ Cʜᴀɴɴᴇʟ Sᴏ Pʟᴇᴀsᴇ Cʟɪᴄᴋ Jᴏɪɴ Bᴜᴛᴛᴏɴ Tᴏ Jᴏɪɴ Mʏ Cʜᴀɴɴᴇʟ Aɴᴅ Tʀʏ Aɢᴀɪɴ")
-TEXT_WELCOME = ("Hᴇʏ User")
 
 WELCOM_PIC = environ.get("WELCOM_PIC", "")
 WELCOM_TEXT = environ.get("WELCOM_TEXT", TEXT_WELCOME)
