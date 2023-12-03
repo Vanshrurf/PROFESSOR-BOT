@@ -48,7 +48,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Filters Configuration 
 MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
-START_MESSAGE = environ.get('START_MESSAGE', "MY_MOOD_OFF")
+START_MESSAGE = environ.get('START_MESSAGE', "Hey Fuck me")
 BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", "BUTTON_LOCK_TEX")
 FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', "FORCE_SUB_TEX")
 MY_MOOD_OFF = ("Hello Use Me My Mood Off")
