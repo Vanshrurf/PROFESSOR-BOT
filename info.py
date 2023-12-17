@@ -11,9 +11,9 @@ def is_enabled(value, default):
 
 
 # PyroClient Setup 
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['21956488'])
+API_HASH = environ['812529f879f06436925c7d62eb49f5d1']
+BOT_TOKEN = environ['6858520223:AAHpU73aZFVmTVBmTLN3r5-GmpkE6CvqDSE']
 
 # Bot settings
 WEBHOOK = bool(environ.get("WEBHOOK", True)) # for web support on/off
@@ -26,24 +26,24 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL')
+auth_channel = environ.get('-1002130368629')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://SMM_PANEL:SMM_PANEL@cluster0.tquwjm3.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://THE_KERALA_STORY:THE_KERALA_STORY@cluster0.u3xfvds.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # FSub
-# Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-# REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1002037410771')
-# REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
-# JOIN_REQS_DB = environ.get("JOIN_REQS_DB", "DATABASE_URI")
-# DATABASE_URI = ("mongodb+srv://SMM_PANEL:SMM_PANEL@cluster0.tquwjm3.mongodb.net/?retryWrites=true&w=majority")
+ Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
+ REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1002130368629')
+ REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
+ JOIN_REQS_DB = environ.get("DATABASE_URI")
+ DATABASE_URI = ("mongodb+srv://THE_KERALA_STORY:THE_KERALA_STORY@cluster0.u3xfvds.mongodb.net/?retryWrites=true&w=majority")
 
 
 # Filters Configuration 
