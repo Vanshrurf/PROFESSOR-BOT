@@ -40,10 +40,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # FSub
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
- REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1002130368629')
- REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
- JOIN_REQS_DB = environ.get("DATABASE_URI")
- DATABASE_URI = ("mongodb+srv://THE_KERALA_STORY:THE_KERALA_STORY@cluster0.u3xfvds.mongodb.net/?retryWrites=true&w=majority")
+REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1002130368629')
+REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
+JOIN_REQS_DB = environ.get("DATABASE_URI")
+DATABASE_URI = ("mongodb+srv://THE_KERALA_STORY:THE_KERALA_STORY@cluster0.u3xfvds.mongodb.net/?retryWrites=true&w=majority")
 
 
 # Filters Configuration 
