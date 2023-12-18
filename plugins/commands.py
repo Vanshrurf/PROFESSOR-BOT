@@ -45,13 +45,10 @@ async def start(client, message):
             InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
             InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+        m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
+        await asyncio.sleep(2)
+        await message.reply_photo(photo=random.choice(PICS), caption=START_MESSAGE.format(user=message.from_user.mention, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), parse_mode=enums.ParseMode.HTML)
+        return await m.delete()
         return
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help", "start", "hehe"]:
@@ -65,13 +62,10 @@ async def start(client, message):
             InlineKeyboardButton('ℹ️ 𝙷𝚎𝚕𝚙', callback_data='help'),
             InlineKeyboardButton('😊 𝙰𝚋𝚘𝚞𝚝', callback_data='about')
         ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_photo(
-            photo=random.choice(PICS),
-            caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
-        )
+        m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
+        await asyncio.sleep(2)
+        await message.reply_photo(photo=random.choice(PICS), caption=START_MESSAGE.format(user=message.from_user.mention, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), parse_mode=enums.ParseMode.HTML)
+        return await m.delete()
         return
 
     kk, file_id = message.command[1].split("_", 1) if "_" in message.command[1] else (False, False)
