@@ -32,7 +32,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://THE_KERALA_STORY:THE_KERALA_STORY@cluster0.u3xfvds.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://FREE_gf:FREE_gf@cluster0.xcn3xqi.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
@@ -43,7 +43,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1002021152965')
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("DATABASE_URI")
-DATABASE_URI = ("mongodb+srv://THE_KERALA_STORY:THE_KERALA_STORY@cluster0.u3xfvds.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = ("mongodb+srv://FREE_gf:FREE_gf@cluster0.xcn3xqi.mongodb.net/?retryWrites=true&w=majority")
 
 
 # Filters Configuration 
