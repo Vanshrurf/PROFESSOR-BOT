@@ -47,7 +47,7 @@ DATABASE_URI = ("mongodb+srv://THE_KERALA_STORY:THE_KERALA_STORY@cluster0.u3xfvd
 
 
 # Filters Configuration 
-# MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
+MAX_RIST_BTNS = int(environ.get('MAX_RIST_BTNS', "10"))
 #START_MESSAGE = environ.get('START_MESSAGE', script.START_TXT)
 # BUTTON_LOCK_TEXT = environ.get("BUTTON_LOCK_TEXT", script.BUTTON_LOCK_TEXT)
 # FORCE_SUB_TEXT = environ.get('FORCE_SUB_TEXT', script.FORCE_SUB_TEXT)
