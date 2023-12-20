@@ -7,13 +7,13 @@ from pymongo.errors import DuplicateKeyError
 from umongo import Instance, Document, fields
 from motor.motor_asyncio import AsyncIOMotorClient
 from marshmallow.exceptions import ValidationError
-from info import FILE_DB_URL, FILE_DB_NAME, COLLECTION_NAME, MAX_RIST_BTNS
+from info import JOIN_REQS_DB, FILE_DB_NAME, COLLECTION_NAME, MAX_RIST_BTNS
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 
-client = AsyncIOMotorClient(FILE_DB_URL)
+client = AsyncIOMotorClient(JOIN_REQS_DB)
 db = client[FILE_DB_NAME]
 instance = Instance.from_db(db)
 
